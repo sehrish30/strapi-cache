@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "festivals",
+  "info": {
+    "singularName": "festival",
+    "pluralName": "festivals",
+    "displayName": "festival"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "lottie": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["files"]
+    },
+    "background": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "from": {
+      "type": "date",
+      "required": false
+    },
+    "to": {
+      "required": false,
+      "type": "date"
+    },
+    "startTime": {
+      "type": "time",
+      "required": false
+    },
+    "endTime": {
+      "type": "time",
+      "required": false
+    }
+  }
+}
