@@ -9,6 +9,7 @@ export default () => ({
       redisConfig: `redis://127.0.0.1:6379`,
       cacheAuthorizedRequests: false,
       cacheHeaders: true,
+      cacheableHeaders: ['content-type', 'accept-encoding', 'content-security-policy'],
       cacheGetTimeoutInMs: 2000, // 2s
     },
   },
